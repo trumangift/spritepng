@@ -1,0 +1,12 @@
+{
+  "name": "spritepng",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "loader-runner": "^4.1.0",
+    "spritesmith": "^3.4.0"
+  },
+  "dependencies": {}
+}
