@@ -14,7 +14,8 @@ module.exports = function (source) {
    });
    Spritesmith.run({src: matchedImages}, function handleResult (err, result) {
       fs.writeFileSync(path.join(process.cwd(), './dist/sprite.png'), result.image);
-      source = source.replace(mathUrlReg, 'url(./dist/sprite.png)')
+      source = source.replace(mathUrlReg, 'url(./dist/sprite.png)');
+      fs.writeFileSync(path.join(process.cwd(), './dist/index.css'),  source);
       callback(err, source);
    });
 };
